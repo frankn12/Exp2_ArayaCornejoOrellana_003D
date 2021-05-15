@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-contacto.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Contacto</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Contáctanos</div>
+            <div class="content">
+                <form action="index.html" method="post" id="mi_formulario2"> 
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label class="details" for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" id="nom" placeholder="Pepito" onchange="CambiarMayusculasNom()" >
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="correo">Correo: </label>
+                            <input type="text" name="email" id="corr" placeholder="nombre@dominio.cl" onchange="CambiarMayusculasCorreo()" >
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="fono">Número de eléfono: </label>
+                            <input type="text" name="fono" placeholder="912345678">
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="asunto">Asunto: </label>
+                            <input type="text" name="asunto" id="asun" placeholder="Motivo de contacto" onchange="CambiarMayusculasAsunto()" >
+                        </div>
+                        <div class="input-box">
+                            <label class="details" for="mensaje">Mensaje: </label>
+                            <textarea name=mensaje required minlength="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+                <div id="msg" class="mensaje"></div>
+
+                <script src="js/formulario-contacto.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
