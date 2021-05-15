@@ -1,0 +1,262 @@
+
+
+@font-face{
+    font-family: "Blue Highway";
+    src: url(../fonts/blue-highway.ttf);
+}
+
+
+@media screen and (min-width: 1201px) {
+    div.txtimg {
+      font-size: 28px;
+    }
+  }
+
+  @media screen and (min-width: 901px) and (max-width: 1200px) {
+    div.txtimg {
+      font-size: 13px;
+    }
+  }
+
+  @media screen and (min-width: 701px) and (max-width: 900px) {
+    div.txtimg {
+      font-size: 10px;
+    }
+  }
+
+
+@media screen and (max-width: 700px) {
+  div.txtimg {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h2.h2-galery {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2.h2-galery {
+    font-size: 20px;
+  }
+}
+
+
+body{
+    background-image:linear-gradient(rgba(47,23,15,.65),rgba(47,23,15,.65)),url(../img/bg1.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+#mainNav{
+    background-color:rgba(47,23,15,.9);
+    font-family: "Blue Highway";
+}
+#mainNav .navbar-brand{
+    color:#e6a756
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    color:rgba(255,255,255,.7);
+    font-weight:800
+}
+#mainNav .navbar-nav .nav-item.active .nav-link{
+    color:#e6a756}
+
+/*EN ESAS MEDIDAS LA BARRA DE NAVEGACIÓN TENDRÁ ESAS CARACTERÍSTICAS*/
+@media (min-width:992px){
+    #mainNav .navbar-nav .nav-item .nav-link{
+        font-size:.9rem
+    }
+    /*INTERACTUO PERO NO ACTIVO*/
+    #mainNav .navbar-nav .nav-item .nav-link:hover{
+        color:rgba(255,255,255,.4)
+    }
+    /*INTERACTUO Y HAGO CLICK*/    
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover{
+        color:#e6a756}
+}
+
+.text-faded{
+    color:rgba(255,255,255,.3)}
+
+.site-heading{
+    font-family: "Blue Highway";
+    margin-top:5rem;
+    margin-bottom:5rem;
+    text-transform:uppercase;
+    line-height:1;
+}
+
+.site-heading .site-heading-lower{
+    font-family: "Blue Highway";
+    font-size:5rem;
+    font-weight:100;
+    line-height:4rem
+}
+
+.footer {
+    background-color: rgba(47, 23, 15, 0.9);
+    font-family: "Blue Highway";
+}
+    
+.footer .redesSociales{
+    width:3vw;
+    height:3vh;
+}
+
+li{
+  list-style:none
+}
+
+.li-puntos{
+  list-style: circle;
+}
+
+
+.section-title1 {
+    font-family: "Blue Highway";
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.section-title2 {
+    font-family: "Blue Highway";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+.intro {
+    position: relative;
+}
+
+/*EN ESAS MEDIDAS LA IMAGEN Y EL TEXTO TENDRÁN ESAS CARACTERÍSTICAS*/
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 75%;
+        float: right;
+        border-radius: 1rem;
+    }
+    .intro .intro-text {
+        left: 0%;
+        width: 60%;
+        margin-top: 5rem;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro .intro-text {
+      width: 45%;
+    }
+}
+
+.bg-parrafo1 {
+    background-color: rgba(206, 205, 205, 0.85);
+    border-radius: 0.5rem;
+}
+
+.p-texto1{
+    font-family: "Blue Highway";
+    text-align: justify;
+}
+
+.bg-cards{
+    background: rgba(206, 205, 205, 0.85); 
+    padding: 3rem;
+    color:black;
+    border-radius: 5px;
+    font-family: "Blue Highway";
+    text-align: justify;
+}
+
+.button { 
+    border: none;
+    color: #f2f2f2;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .button2 {
+    background-color: #f2f2f2; 
+    color: black; 
+    border: 2px solid #331a00;
+  }
+  
+  .button2:hover {
+    background-color: rgba(47, 23, 15, 0.9);
+    color: #f2f2f2;
+  }
+
+  .results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Blue Highway";
+    font-size: 25px;
+  }
+  
+  .result {
+    background-color: rgb(128, 70, 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  .result img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Blue Highway";
+  }
+  
+  .button-api  {
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  .button-api:active {
+    transform: scale(0.98);
+  }
+  
+  .button-api:focus {
+    outline: none
+  }  
+
+  hr {
+    border: 0; 
+    height: 0; box-shadow: 0 1px 5px 1px #fff;
+}
+
+
